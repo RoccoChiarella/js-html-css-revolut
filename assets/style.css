@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.header-left-logo{
+    height: 100%;
+    padding: 10px;
+}
+
+.header-left-logo img{
+    width: auto;
+    height: 100%;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-item{
+    display: inline-block;
+    padding: 0px 1.2rem;
+}
+
+.header-right-right-dropdownmenu .dropdown-item a{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.dropdown-menu-list{
+    display: flex;
+}
+
+.dropdown-item{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 150px;
+    height: 250px;
+    background-color: lightblue;
+    padding: 10px;
+    display: none;
+}
+
+.dropdown-menu.active{
+    display: block;
+}
+
+.header-right-buttons{
+    margin-left: 10px;
+}
+
+.header-right-buttons .left-button{
+    border-radius: 0.75rem;
+    transition: all 0.2s ease 0s;
+    color: rgb(25, 28, 31);
+    background-color: rgba(25, 28, 31, 0.08);
+    padding: 0.625em 1.5em;
+}
+.header-right-buttons .left-button:hover{
+    background-color: rgba(25, 28, 31, 0.16);
+}
+
+.header-right-buttons .right-button{
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease 0s;
+    color: white;
+    background-color: rgb(25, 28, 31);
+}
+
+.header-right-buttons .right-button:hover{
+    background-color: rgba(25, 28, 31, 0.84);
+}
