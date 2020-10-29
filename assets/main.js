@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    $('.app-menu').mouseenter(function() {
-        $('.dropdown-menu').addClass('active');
+    $('.dropdown-item').mouseenter(function() {
+        $(this).children('.dropdown-menu').addClass('active');
     });
 
     $('.dropdown-item').mouseleave(function() {
-        $('.dropdown-menu').removeClass('active');
+        $(this).children('.dropdown-menu').removeClass('active');
     });
 });
